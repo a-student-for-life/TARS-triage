@@ -1,0 +1,103 @@
+{
+  "oil vs ordinary sea": {
+    "n_oil": 1547,
+    "n_neg": 374,
+    "n_scenes": 146,
+    "browse_auc": 0.819,
+    "browse_ci": [
+      0.773,
+      0.863
+    ],
+    "current_auc": 0.745,
+    "current_ci": [
+      0.683,
+      0.809
+    ],
+    "diff_ci": [
+      0.023,
+      0.127
+    ],
+    "browse_recall": 0.77,
+    "browse_far": 0.273,
+    "current_recall": 0.645,
+    "current_far": 0.203
+  },
+  "oil vs look-alikes": {
+    "n_oil": 1547,
+    "n_neg": 4465,
+    "n_scenes": 156,
+    "browse_auc": 0.859,
+    "browse_ci": [
+      0.818,
+      0.895
+    ],
+    "current_auc": 0.865,
+    "current_ci": [
+      0.826,
+      0.903
+    ],
+    "diff_ci": [
+      -0.036,
+      0.026
+    ],
+    "browse_recall": 0.77,
+    "browse_far": 0.202,
+    "current_recall": 0.645,
+    "current_far": 0.077
+  },
+  "oil vs all negatives": {
+    "n_oil": 1547,
+    "n_neg": 4839,
+    "n_scenes": 156,
+    "browse_auc": 0.856,
+    "browse_ci": [
+      0.815,
+      0.892
+    ],
+    "current_auc": 0.856,
+    "current_ci": [
+      0.816,
+      0.895
+    ],
+    "diff_ci": [
+      -0.031,
+      0.033
+    ],
+    "browse_recall": 0.77,
+    "browse_far": 0.208,
+    "current_recall": 0.645,
+    "current_far": 0.087
+  },
+  "by_length": {
+    "<1 km": {
+      "n": 589,
+      "browse_auc": 0.824,
+      "current_auc": 0.735,
+      "browse_recall": 0.778
+    },
+    "1-2 km": {
+      "n": 348,
+      "browse_auc": 0.832,
+      "current_auc": 0.71,
+      "browse_recall": 0.805
+    },
+    "2-5 km": {
+      "n": 351,
+      "browse_auc": 0.823,
+      "current_auc": 0.751,
+      "browse_recall": 0.775
+    },
+    "5-10 km": {
+      "n": 143,
+      "browse_auc": 0.822,
+      "current_auc": 0.778,
+      "browse_recall": 0.755
+    },
+    ">=10 km": {
+      "n": 116,
+      "browse_auc": 0.738,
+      "current_auc": 0.838,
+      "browse_recall": 0.629
+    }
+  }
+}

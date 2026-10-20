@@ -1,0 +1,19 @@
+{
+ "cpu": "x86_64",
+ "threads": 2,
+ "tf": "2.20.0",
+ "b4": {
+  "input_px": 380,
+  "params_total": 18601568,
+  "params_backbone": 17673823,
+  "ms_median": 130.94505549997848,
+  "ms_p90": 150.27056310027547
+ },
+ "b0": {
+  "input_px": 224,
+  "params_total": 4713124,
+  "params_backbone": 4049571,
+  "ms_median": 29.47170300012658,
+  "ms_p90": 32.534212500149806
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "source": "AIS_2023_06_14.zip",
+ "raw_reports": 8858291,
+ "valid_reports": 8844518,
+ "vessels_in_day": 20543,
+ "native_1min": [
+  {
+   "time": "2023-06-14 03:00:00+00:00",
+   "vessels": 15352,
+   "contexts": {
+    "dense": 10329,
+    "coastal": 3685,
+    "isolated": 1255,
+    "rendezvous": 83
+   },
+   "judged_by_layer3": 14618,
+   "layer3_outliers": 147,
+   "escalated": 401,
+   "escalated_pct": 2.61,
+   "escalated_layer3_only": 57,
+   "reasons": {
+    "LOITERING_ALONE": 261,
+    "RENDEZVOUS": 83,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 57
+   },
+   "median_history_span_min": 59.96666666666667
+  },
+  {
+   "time": "2023-06-14 09:00:00+00:00",
+   "vessels": 15435,
+   "contexts": {
+    "dense": 10135,
+    "coastal": 3840,
+    "isolated": 1375,
+    "rendezvous": 85
+   },
+   "judged_by_layer3": 15048,
+   "layer3_outliers": 151,
+   "escalated": 383,
+   "escalated_pct": 2.48,
+   "escalated_layer3_only": 64,
+   "reasons": {
+    "LOITERING_ALONE": 233,
+    "RENDEZVOUS": 85,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 64,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 1
+   },
+   "median_history_span_min": 62.983333333333334
+  },
+  {
+   "time": "2023-06-14 15:00:00+00:00",
+   "vessels": 16996,
+   "contexts": {
+    "dense": 10900,
+    "coastal": 4649,
+    "isolated": 1373,
+    "rendezvous": 74
+   },
+   "judged_by_layer3": 16546,
+   "layer3_outliers": 166,
+   "escalated": 394,
+   "escalated_pct": 2.32,
+   "escalated_layer3_only": 81,
+   "reasons": {
+    "LOITERING_ALONE": 238,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 81,
+    "RENDEZVOUS": 74,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 1
+   },
+   "median_history_span_min": 60.016666666666666
+  },
+  {
+   "time": "2023-06-14 21:00:00+00:00",
+   "vessels": 17752,
+   "contexts": {
+    "dense": 11802,
+    "coastal": 4556,
+    "isolated": 1311,
+    "rendezvous": 83
+   },
+   "judged_by_layer3": 17353,
+   "layer3_outliers": 174,
+   "escalated": 386,
+   "escalated_pct": 2.17,
+   "escalated_layer3_only": 73,
+   "reasons": {
+    "LOITERING_ALONE": 230,
+    "RENDEZVOUS": 83,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 73
+   },
+   "median_history_span_min": 60.0
+  }
+ ],
+ "thinned_5min": [
+  {
+   "time": "2023-06-14 03:00:00+00:00",
+   "vessels": 15352,
+   "contexts": {
+    "dense": 10308,
+    "coastal": 3701,
+    "isolated": 1253,
+    "rendezvous": 90
+   },
+   "judged_by_layer3": 14395,
+   "layer3_outliers": 144,
+   "escalated": 405,
+   "escalated_pct": 2.64,
+   "escalated_layer3_only": 55,
+   "reasons": {
+    "LOITERING_ALONE": 260,
+    "RENDEZVOUS": 90,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 55
+   },
+   "median_history_span_min": 116.96666666666667
+  },
+  {
+   "time": "2023-06-14 09:00:00+00:00",
+   "vessels": 15430,
+   "contexts": {
+    "dense": 10074,
+    "coastal": 3876,
+    "isolated": 1390,
+    "rendezvous": 90
+   },
+   "judged_by_layer3": 14956,
+   "layer3_outliers": 150,
+   "escalated": 396,
+   "escalated_pct": 2.57,
+   "escalated_layer3_only": 64,
+   "reasons": {
+    "LOITERING_ALONE": 241,
+    "RENDEZVOUS": 90,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 64,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 1
+   },
+   "median_history_span_min": 120.0
+  },
+  {
+   "time": "2023-06-14 15:00:00+00:00",
+   "vessels": 16989,
+   "contexts": {
+    "dense": 10958,
+    "coastal": 4600,
+    "isolated": 1361,
+    "rendezvous": 70
+   },
+   "judged_by_layer3": 16326,
+   "layer3_outliers": 164,
+   "escalated": 394,
+   "escalated_pct": 2.32,
+   "escalated_layer3_only": 89,
+   "reasons": {
+    "LOITERING_ALONE": 235,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 89,
+    "RENDEZVOUS": 70
+   },
+   "median_history_span_min": 128.98333333333332
+  },
+  {
+   "time": "2023-06-14 21:00:00+00:00",
+   "vessels": 17744,
+   "contexts": {
+    "dense": 11749,
+    "coastal": 4554,
+    "isolated": 1344,
+    "rendezvous": 97
+   },
+   "judged_by_layer3": 17180,
+   "layer3_outliers": 172,
+   "escalated": 430,
+   "escalated_pct": 2.42,
+   "escalated_layer3_only": 78,
+   "reasons": {
+    "LOITERING_ALONE": 255,
+    "RENDEZVOUS": 97,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 78
+   },
+   "median_history_span_min": 118.84166666666667
+  }
+ ]
+}

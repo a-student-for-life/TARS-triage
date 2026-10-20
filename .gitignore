@@ -1,0 +1,88 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs & temps ──────────────────────────────────────────────────────────────
+*.log
+*.bak
+*.tmp
+*.swp
+
+# ── Model weights ─────────────────────────────────────────────────────────────
+# The 83 MB backbone weights are a release download (see README). The regional
+# heads (11 MB each) and their registry/threshold files are tracked.
+*.h5
+!models/browse_head_v1.weights.h5
+!models/gulf_head_v1.weights.h5
+*.keras
+*.pt
+*.pth
+*.pkl
+*.onnx
+
+# ── Database ──────────────────────────────────────────────────────────────────
+# Runtime database — recreated automatically on first startup.
+oil_spill.db
+oil_spill.db-shm
+oil_spill.db-wal
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+# Raw training data — too large for git.
+# See README for download instructions.
+data/csiro/
+data/temp_images/
+temp_images/
+archive/
+
+# ── Generated outputs ─────────────────────────────────────────────────────────
+# Produced by scripts/ — regenerate by re-running the evaluation scripts.
+outputs/
+
+# ── Debug side-effects ────────────────────────────────────────────────────────
+# Written at runtime by ml_logic.preprocess_style() on every inference call.
+debug_ai_input*.jpg
+_browser_tmp*.jpg
+_browser_dist_tmp.jpg
+_noise_sens_tmp.jpg
+
+# ── Node.js ───────────────────────────────────────────────────────────────────
+node_modules/
+node_ingestor/node_modules/
+frontend/node_modules/
+
+# ── Frontend build ────────────────────────────────────────────────────────────
+frontend/dist/
+frontend/.vite/
+frontend/.vite-temp/
+
+# ── Environment & secrets ─────────────────────────────────────────────────────
+# Local developer env files — NEVER commit these.
+# .env.example IS committed (no real secrets inside).
+.env
+.env.local
+.env.*.local
+node_ingestor/.env
+frontend/.env
+frontend/.env.local
+secrets.yaml
+secrets.json
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/settings.json
+*.code-workspace

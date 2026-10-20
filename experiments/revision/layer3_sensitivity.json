@@ -1,0 +1,158 @@
+{
+ "snapshots": [
+  {
+   "time": "2023-06-14 03:00:00+00:00",
+   "vessels": 15352,
+   "judged": 14618,
+   "non_dense_judged": 4723
+  },
+  {
+   "time": "2023-06-14 09:00:00+00:00",
+   "vessels": 15435,
+   "judged": 15048,
+   "non_dense_judged": 5114
+  },
+  {
+   "time": "2023-06-14 15:00:00+00:00",
+   "vessels": 16996,
+   "judged": 16546,
+   "non_dense_judged": 5884
+  },
+  {
+   "time": "2023-06-14 21:00:00+00:00",
+   "vessels": 17752,
+   "judged": 17353,
+   "non_dense_judged": 5791
+  }
+ ],
+ "settings": {
+  "auto|3.5": {
+   "mean_flagged": 1220.25,
+   "mean_pct": 7.41,
+   "range_pct": [
+    6.62,
+    8.69
+   ]
+  },
+  "auto|5.0": {
+   "mean_flagged": 1128.75,
+   "mean_pct": 6.8425,
+   "range_pct": [
+    5.95,
+    7.97
+   ]
+  },
+  "auto|7.0": {
+   "mean_flagged": 934.0,
+   "mean_pct": 5.657500000000001,
+   "range_pct": [
+    4.85,
+    6.51
+   ]
+  },
+  "auto|10.0": {
+   "mean_flagged": 716.75,
+   "mean_pct": 4.34,
+   "range_pct": [
+    3.69,
+    5.02
+   ]
+  },
+  "0.05|3.5": {
+   "mean_flagged": 362.25,
+   "mean_pct": 2.21,
+   "range_pct": [
+    1.93,
+    2.52
+   ]
+  },
+  "0.05|5.0": {
+   "mean_flagged": 361.0,
+   "mean_pct": 2.2025,
+   "range_pct": [
+    1.93,
+    2.52
+   ]
+  },
+  "0.05|7.0": {
+   "mean_flagged": 345.0,
+   "mean_pct": 2.0975,
+   "range_pct": [
+    1.86,
+    2.52
+   ]
+  },
+  "0.05|10.0": {
+   "mean_flagged": 314.0,
+   "mean_pct": 1.9,
+   "range_pct": [
+    1.55,
+    2.45
+   ]
+  },
+  "0.02|3.5": {
+   "mean_flagged": 143.0,
+   "mean_pct": 0.87,
+   "range_pct": [
+    0.68,
+    1.02
+   ]
+  },
+  "0.02|5.0": {
+   "mean_flagged": 143.0,
+   "mean_pct": 0.87,
+   "range_pct": [
+    0.68,
+    1.02
+   ]
+  },
+  "0.02|7.0": {
+   "mean_flagged": 143.0,
+   "mean_pct": 0.87,
+   "range_pct": [
+    0.68,
+    1.02
+   ]
+  },
+  "0.02|10.0": {
+   "mean_flagged": 140.25,
+   "mean_pct": 0.8525,
+   "range_pct": [
+    0.68,
+    1.02
+   ]
+  },
+  "0.01|3.5": {
+   "mean_flagged": 69.25,
+   "mean_pct": 0.42,
+   "range_pct": [
+    0.37,
+    0.48
+   ]
+  },
+  "0.01|5.0": {
+   "mean_flagged": 69.25,
+   "mean_pct": 0.42,
+   "range_pct": [
+    0.37,
+    0.48
+   ]
+  },
+  "0.01|7.0": {
+   "mean_flagged": 69.25,
+   "mean_pct": 0.42,
+   "range_pct": [
+    0.37,
+    0.48
+   ]
+  },
+  "0.01|10.0": {
+   "mean_flagged": 69.25,
+   "mean_pct": 0.42,
+   "range_pct": [
+    0.37,
+    0.48
+   ]
+  }
+ }
+}

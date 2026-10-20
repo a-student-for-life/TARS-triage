@@ -1,0 +1,24 @@
+{
+  "threshold": 0.742,
+  "epochs": 12,
+  "cv_best_epochs": [
+    20,
+    12,
+    5,
+    13,
+    6
+  ],
+  "cv_thresholds": [
+    0.874,
+    0.683,
+    0.742,
+    0.802,
+    0.714
+  ],
+  "n_train": 4741,
+  "n_oil": 1220,
+  "preprocessing": "raw (grayscale, resize to 380; no STI)",
+  "crop_km": 25.0,
+  "data": "ESSD 2019 Eastern Mediterranean (PANGAEA.980773) + ordinary-sea crops",
+  "evaluation": "see experiments/browse_eval/comparison_v2.json (5-fold CV grouped by day)"
+}

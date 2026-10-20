@@ -1,0 +1,194 @@
+{
+ "source": "AIS_2023_06_14.zip",
+ "raw_reports": 8858291,
+ "valid_reports": 8844518,
+ "vessels_in_day": 20543,
+ "native_1min": [
+  {
+   "time": "2023-06-14 03:00:00+00:00",
+   "vessels": 15352,
+   "contexts": {
+    "dense": 10329,
+    "coastal": 3685,
+    "isolated": 1255,
+    "rendezvous": 83
+   },
+   "judged_by_layer3": 14618,
+   "layer3_outliers": 2080,
+   "escalated": 1314,
+   "escalated_pct": 8.56,
+   "escalated_layer3_only": 970,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 970,
+    "LOITERING_ALONE": 230,
+    "RENDEZVOUS": 68,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 31,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 15
+   },
+   "median_history_span_min": 59.96666666666667
+  },
+  {
+   "time": "2023-06-14 09:00:00+00:00",
+   "vessels": 15435,
+   "contexts": {
+    "dense": 10135,
+    "coastal": 3840,
+    "isolated": 1375,
+    "rendezvous": 85
+   },
+   "judged_by_layer3": 15048,
+   "layer3_outliers": 1864,
+   "escalated": 1302,
+   "escalated_pct": 8.44,
+   "escalated_layer3_only": 983,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 983,
+    "LOITERING_ALONE": 196,
+    "RENDEZVOUS": 69,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 38,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 16
+   },
+   "median_history_span_min": 62.983333333333334
+  },
+  {
+   "time": "2023-06-14 15:00:00+00:00",
+   "vessels": 16996,
+   "contexts": {
+    "dense": 10900,
+    "coastal": 4649,
+    "isolated": 1373,
+    "rendezvous": 74
+   },
+   "judged_by_layer3": 16546,
+   "layer3_outliers": 2851,
+   "escalated": 1716,
+   "escalated_pct": 10.1,
+   "escalated_layer3_only": 1403,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 1403,
+    "LOITERING_ALONE": 182,
+    "RENDEZVOUS": 57,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 57,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 17
+   },
+   "median_history_span_min": 60.016666666666666
+  },
+  {
+   "time": "2023-06-14 21:00:00+00:00",
+   "vessels": 17752,
+   "contexts": {
+    "dense": 11802,
+    "coastal": 4556,
+    "isolated": 1311,
+    "rendezvous": 83
+   },
+   "judged_by_layer3": 17353,
+   "layer3_outliers": 3119,
+   "escalated": 1592,
+   "escalated_pct": 8.97,
+   "escalated_layer3_only": 1279,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 1279,
+    "LOITERING_ALONE": 182,
+    "RENDEZVOUS": 59,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 48,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 24
+   },
+   "median_history_span_min": 60.0
+  }
+ ],
+ "thinned_5min": [
+  {
+   "time": "2023-06-14 03:00:00+00:00",
+   "vessels": 15352,
+   "contexts": {
+    "dense": 10308,
+    "coastal": 3701,
+    "isolated": 1253,
+    "rendezvous": 90
+   },
+   "judged_by_layer3": 14395,
+   "layer3_outliers": 2806,
+   "escalated": 1701,
+   "escalated_pct": 11.08,
+   "escalated_layer3_only": 1351,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 1351,
+    "LOITERING_ALONE": 218,
+    "RENDEZVOUS": 64,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 42,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 26
+   },
+   "median_history_span_min": 116.96666666666667
+  },
+  {
+   "time": "2023-06-14 09:00:00+00:00",
+   "vessels": 15430,
+   "contexts": {
+    "dense": 10074,
+    "coastal": 3876,
+    "isolated": 1390,
+    "rendezvous": 90
+   },
+   "judged_by_layer3": 14956,
+   "layer3_outliers": 2686,
+   "escalated": 1810,
+   "escalated_pct": 11.73,
+   "escalated_layer3_only": 1478,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 1478,
+    "LOITERING_ALONE": 182,
+    "RENDEZVOUS": 66,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 60,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 24
+   },
+   "median_history_span_min": 120.0
+  },
+  {
+   "time": "2023-06-14 15:00:00+00:00",
+   "vessels": 16989,
+   "contexts": {
+    "dense": 10958,
+    "coastal": 4600,
+    "isolated": 1361,
+    "rendezvous": 70
+   },
+   "judged_by_layer3": 16326,
+   "layer3_outliers": 3939,
+   "escalated": 2257,
+   "escalated_pct": 13.29,
+   "escalated_layer3_only": 1952,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 1952,
+    "LOITERING_ALONE": 169,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 66,
+    "RENDEZVOUS": 51,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 19
+   },
+   "median_history_span_min": 128.98333333333332
+  },
+  {
+   "time": "2023-06-14 21:00:00+00:00",
+   "vessels": 17744,
+   "contexts": {
+    "dense": 11749,
+    "coastal": 4554,
+    "isolated": 1344,
+    "rendezvous": 97
+   },
+   "judged_by_layer3": 17180,
+   "layer3_outliers": 4211,
+   "escalated": 2187,
+   "escalated_pct": 12.33,
+   "escalated_layer3_only": 1835,
+   "reasons": {
+    "BEHAVIOUR_OUTLIER_ISO_FOREST": 1835,
+    "LOITERING_ALONE": 187,
+    "BEHAVIOUR_OUTLIER_ISO_FOREST + LOITERING_ALONE": 68,
+    "RENDEZVOUS": 60,
+    "RENDEZVOUS + BEHAVIOUR_OUTLIER_ISO_FOREST": 37
+   },
+   "median_history_span_min": 118.84166666666667
+  }
+ ]
+}

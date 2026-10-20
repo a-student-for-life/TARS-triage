@@ -1,0 +1,38 @@
+{
+ "eastern_med": {
+  "n_products": 518,
+  "n_points": 2000,
+  "never_covered_within_14d": 0,
+  "wait_h_median": 42.48210912972222,
+  "wait_h_p90": 103.5244393605,
+  "wait_h_mean_finite": 49.24808433183361,
+  "share_wait_le_24h": 0.352,
+  "share_wait_le_48h": 0.536,
+  "n_lag": 60,
+  "pub_lag_h_median": 10.799444444444443,
+  "pub_lag_h_p10": 2.263888888888889,
+  "pub_lag_h_p90": 28.068722222222224,
+  "pub_lag_h_min": 1.2455555555555555,
+  "pub_lag_h_max": 79.70833333333333
+ },
+ "arabian_gulf": {
+  "n_products": 448,
+  "n_points": 2000,
+  "never_covered_within_14d": 0,
+  "wait_h_median": 31.178356269305556,
+  "wait_h_p90": 77.95692237988892,
+  "wait_h_mean_finite": 37.8861593722782,
+  "share_wait_le_24h": 0.402,
+  "share_wait_le_48h": 0.684,
+  "n_lag": 60,
+  "pub_lag_h_median": 9.5725,
+  "pub_lag_h_p10": 2.74425,
+  "pub_lag_h_p90": 31.90530555555558,
+  "pub_lag_h_min": 1.9766666666666666,
+  "pub_lag_h_max": 90.09777777777778
+ },
+ "window": [
+  "2026-09-01T00:00:00Z",
+  "2026-10-15T00:00:00Z"
+ ]
+}

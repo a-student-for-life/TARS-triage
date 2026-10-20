@@ -1,0 +1,155 @@
+{
+ "n": 12068,
+ "default": {
+  "RENDEZVOUS_MAX_KM": 1.0,
+  "RENDEZVOUS_MAX_SPEED_KNOTS": 3.0,
+  "OFFSHORE_KM": 10.0,
+  "DENSE_CLUSTER_MIN_SIZE": 6,
+  "DENSE_MAX_NN_KM": 5.0
+ },
+ "runs": [
+  {
+   "param": "RENDEZVOUS_MAX_KM",
+   "value": 0.5,
+   "dense": 5466,
+   "coastal": 5145,
+   "isolated": 1447,
+   "rendezvous": 10
+  },
+  {
+   "param": "RENDEZVOUS_MAX_KM",
+   "value": 1.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1446,
+   "rendezvous": 11
+  },
+  {
+   "param": "RENDEZVOUS_MAX_KM",
+   "value": 2.0,
+   "dense": 7178,
+   "coastal": 3433,
+   "isolated": 1423,
+   "rendezvous": 34
+  },
+  {
+   "param": "RENDEZVOUS_MAX_KM",
+   "value": 5.0,
+   "dense": 8253,
+   "coastal": 2375,
+   "isolated": 1368,
+   "rendezvous": 72
+  },
+  {
+   "param": "RENDEZVOUS_MAX_SPEED_KNOTS",
+   "value": 1.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1448,
+   "rendezvous": 9
+  },
+  {
+   "param": "RENDEZVOUS_MAX_SPEED_KNOTS",
+   "value": 3.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1446,
+   "rendezvous": 11
+  },
+  {
+   "param": "RENDEZVOUS_MAX_SPEED_KNOTS",
+   "value": 5.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1444,
+   "rendezvous": 13
+  },
+  {
+   "param": "RENDEZVOUS_MAX_SPEED_KNOTS",
+   "value": 1000000000.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1433,
+   "rendezvous": 24
+  },
+  {
+   "param": "OFFSHORE_KM",
+   "value": 5.0,
+   "dense": 6290,
+   "coastal": 4051,
+   "isolated": 1708,
+   "rendezvous": 19
+  },
+  {
+   "param": "OFFSHORE_KM",
+   "value": 10.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1446,
+   "rendezvous": 11
+  },
+  {
+   "param": "OFFSHORE_KM",
+   "value": 20.0,
+   "dense": 6290,
+   "coastal": 4659,
+   "isolated": 1114,
+   "rendezvous": 5
+  },
+  {
+   "param": "DENSE_CLUSTER_MIN_SIZE",
+   "value": 4,
+   "dense": 8178,
+   "coastal": 2601,
+   "isolated": 1283,
+   "rendezvous": 6
+  },
+  {
+   "param": "DENSE_CLUSTER_MIN_SIZE",
+   "value": 6,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1446,
+   "rendezvous": 11
+  },
+  {
+   "param": "DENSE_CLUSTER_MIN_SIZE",
+   "value": 8,
+   "dense": 4625,
+   "coastal": 5869,
+   "isolated": 1559,
+   "rendezvous": 15
+  },
+  {
+   "param": "DENSE_MAX_NN_KM",
+   "value": 2.0,
+   "dense": 5715,
+   "coastal": 4645,
+   "isolated": 1691,
+   "rendezvous": 17
+  },
+  {
+   "param": "DENSE_MAX_NN_KM",
+   "value": 5.0,
+   "dense": 6290,
+   "coastal": 4321,
+   "isolated": 1446,
+   "rendezvous": 11
+  },
+  {
+   "param": "DENSE_MAX_NN_KM",
+   "value": 10.0,
+   "dense": 6526,
+   "coastal": 4221,
+   "isolated": 1310,
+   "rendezvous": 11
+  }
+ ],
+ "baseline": {
+  "dense": 6290,
+  "coastal": 4321,
+  "isolated": 1446,
+  "rendezvous": 11
+ },
+ "seconds_per_run": 3.7
+}

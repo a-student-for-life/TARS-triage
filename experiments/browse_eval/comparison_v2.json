@@ -1,0 +1,107 @@
+{
+  "oil vs look-alikes": {
+    "browse_auc": 0.925,
+    "browse_ci": [
+      0.912,
+      0.937
+    ],
+    "current_auc": 0.714,
+    "current_ci": [
+      0.688,
+      0.738
+    ],
+    "diff_ci": [
+      0.188,
+      0.237
+    ]
+  },
+  "oil vs ordinary sea": {
+    "browse_auc": 0.89,
+    "browse_ci": [
+      0.873,
+      0.906
+    ],
+    "current_auc": 0.549,
+    "current_ci": [
+      0.518,
+      0.578
+    ],
+    "diff_ci": [
+      0.311,
+      0.375
+    ]
+  },
+  "oil vs all negatives": {
+    "browse_auc": 0.909,
+    "browse_ci": [
+      0.896,
+      0.921
+    ],
+    "current_auc": 0.638,
+    "current_ci": [
+      0.61,
+      0.664
+    ],
+    "diff_ci": [
+      0.246,
+      0.298
+    ]
+  },
+  "rates": {
+    "oil": {
+      "n": 1220,
+      "browse_flag_rate": 0.615,
+      "current_flag_rate": 0.365
+    },
+    "lookalike": {
+      "n": 1894,
+      "browse_flag_rate": 0.051,
+      "current_flag_rate": 0.09
+    },
+    "background": {
+      "n": 1627,
+      "browse_flag_rate": 0.038,
+      "current_flag_rate": 0.157
+    }
+  },
+  "by_size": {
+    "<1 km": {
+      "n": 313,
+      "browse_auc": 0.861,
+      "current_auc": 0.614,
+      "browse_recall": 0.431
+    },
+    "1-2 km": {
+      "n": 335,
+      "browse_auc": 0.923,
+      "current_auc": 0.578,
+      "browse_recall": 0.63
+    },
+    "2-5 km": {
+      "n": 372,
+      "browse_auc": 0.922,
+      "current_auc": 0.601,
+      "browse_recall": 0.68
+    },
+    "5-10 km": {
+      "n": 124,
+      "browse_auc": 0.949,
+      "current_auc": 0.81,
+      "browse_recall": 0.782
+    },
+    ">=10 km": {
+      "n": 76,
+      "browse_auc": 0.918,
+      "current_auc": 0.896,
+      "browse_recall": 0.711
+    }
+  },
+  "open water": {
+    "browse_auc": 0.904,
+    "current_auc": 0.768
+  },
+  "coastal": {
+    "browse_auc": 0.896,
+    "current_auc": 0.501
+  }
+}

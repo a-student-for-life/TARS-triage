@@ -1,0 +1,17 @@
+{
+  "threshold": 0.46,
+  "epochs": 4,
+  "cv_thresholds": [
+    0.655,
+    0.435,
+    0.46,
+    0.895,
+    0.323
+  ],
+  "n_train": 6386,
+  "n_oil": 1547,
+  "preprocessing": "raw (grayscale, resize to 380; no STI)",
+  "crop_km": 25.0,
+  "data": "GulfOilSAR 2021-2022 (doi:10.5281/zenodo.23261453) + ordinary-sea crops",
+  "evaluation": "see experiments/gulf_eval/README.md (trained 2022, tested 2021)"
+}

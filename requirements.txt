@@ -1,0 +1,36 @@
+# TARS — Python backend dependencies
+# Install with: pip install -r requirements.txt
+# Python >= 3.10 required (code uses | union types in type hints)
+
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn==0.30.6
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.45
+
+# ── Data validation ───────────────────────────────────────────────────────────
+pydantic==2.11.7
+
+# ── ML / AI ───────────────────────────────────────────────────────────────────
+tensorflow==2.20.0
+numpy==2.2.6
+scikit-learn==1.8.0
+hdbscan>=0.8.38
+global-land-mask==1.0.0   # offline land mask for the offshore rules
+
+# ── Image processing ──────────────────────────────────────────────────────────
+# Use opencv-python-headless instead on servers without a display
+opencv-python==4.12.0
+
+# ── Satellite data (NASA ASF API) ─────────────────────────────────────────────
+asf-search==10.1.1
+httpx==0.28.1
+requests==2.32.4
+
+# ── Evaluation & analysis (scripts/ only — not needed for live pipeline) ──────
+matplotlib==3.10.7
+pandas==3.0.2
+
+# ── Tests ─────────────────────────────────────────────────────────────────────
+pytest>=8

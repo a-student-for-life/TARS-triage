@@ -1,0 +1,121 @@
+{
+ "med_check": {
+  "rerun_auc_all": 0.9090815761170683,
+  "stored_auc_all": 0.9090815761170683,
+  "score_corr": 0.9999999999999999
+ },
+ "med": {
+  "0.0": {
+   "n_oil": 1153,
+   "n_lookalike": 1760,
+   "browse_auc": 0.911,
+   "browse_auc_ci": [
+    0.898,
+    0.922
+   ],
+   "recall": 0.62,
+   "false_alarms": 0.044,
+   "csiro_auc": 0.635,
+   "csiro_recall": 0.365
+  },
+  "2.0": {
+   "n_oil": 1153,
+   "n_lookalike": 1760,
+   "browse_auc": 0.908,
+   "browse_auc_ci": [
+    0.896,
+    0.919
+   ],
+   "recall": 0.632,
+   "false_alarms": 0.049,
+   "csiro_auc": 0.638,
+   "csiro_recall": 0.368
+  },
+  "5.0": {
+   "n_oil": 1153,
+   "n_lookalike": 1760,
+   "browse_auc": 0.9,
+   "browse_auc_ci": [
+    0.887,
+    0.911
+   ],
+   "recall": 0.598,
+   "false_alarms": 0.048,
+   "csiro_auc": 0.636,
+   "csiro_recall": 0.365
+  },
+  "10.0": {
+   "n_oil": 1153,
+   "n_lookalike": 1760,
+   "browse_auc": 0.87,
+   "browse_auc_ci": [
+    0.856,
+    0.883
+   ],
+   "recall": 0.537,
+   "false_alarms": 0.049,
+   "csiro_auc": 0.638,
+   "csiro_recall": 0.341
+  }
+ },
+ "gulf": {
+  "0.0": {
+   "n_oil": 675,
+   "n_lookalike": 1787,
+   "browse_auc": 0.881,
+   "browse_auc_ci": [
+    0.844,
+    0.932
+   ],
+   "recall": 0.584,
+   "false_alarms": 0.05,
+   "csiro_auc": 0.841,
+   "csiro_recall": 0.612
+  },
+  "2.0": {
+   "n_oil": 675,
+   "n_lookalike": 1787,
+   "browse_auc": 0.882,
+   "browse_auc_ci": [
+    0.844,
+    0.932
+   ],
+   "recall": 0.592,
+   "false_alarms": 0.051,
+   "csiro_auc": 0.843,
+   "csiro_recall": 0.615
+  },
+  "5.0": {
+   "n_oil": 675,
+   "n_lookalike": 1787,
+   "browse_auc": 0.878,
+   "browse_auc_ci": [
+    0.839,
+    0.928
+   ],
+   "recall": 0.582,
+   "false_alarms": 0.054,
+   "csiro_auc": 0.837,
+   "csiro_recall": 0.612
+  },
+  "10.0": {
+   "n_oil": 675,
+   "n_lookalike": 1787,
+   "browse_auc": 0.855,
+   "browse_auc_ci": [
+    0.816,
+    0.906
+   ],
+   "recall": 0.528,
+   "false_alarms": 0.057,
+   "csiro_auc": 0.817,
+   "csiro_recall": 0.578
+  }
+ },
+ "n_units": 5750,
+ "n_paired_units": 5375,
+ "paired_by_region": {
+  "gulf": 2462,
+  "med": 2913
+ }
+}

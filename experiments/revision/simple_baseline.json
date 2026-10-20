@@ -1,0 +1,62 @@
+{
+ "med_logistic": {
+  "auc_all": 0.785,
+  "ci": [
+   0.766,
+   0.802
+  ],
+  "recall": 0.258,
+  "false_alarms": 0.044,
+  "auc_vs_lookalike": 0.826,
+  "auc_vs_background": 0.736
+ },
+ "med_boosting": {
+  "auc_all": 0.84,
+  "ci": [
+   0.826,
+   0.856
+  ],
+  "recall": 0.375,
+  "false_alarms": 0.045,
+  "auc_vs_lookalike": 0.847,
+  "auc_vs_background": 0.832,
+  "cnn_auc_same_crops": 0.909,
+  "cnn_minus_baseline_ci": [
+   0.055,
+   0.069,
+   0.083
+  ]
+ },
+ "gulf2021_logistic": {
+  "auc_all": 0.796,
+  "auc_sd": 0.004,
+  "ci": [
+   0.734,
+   0.85
+  ],
+  "recall": 0.23,
+  "false_alarms": 0.048
+ },
+ "gulf2021_boosting": {
+  "auc_all": 0.822,
+  "auc_sd": 0.008,
+  "ci": [
+   0.772,
+   0.877
+  ],
+  "recall": 0.401,
+  "false_alarms": 0.058
+ },
+ "med_single_feature_auc_top5": {
+  "dark85": 0.646,
+  "p05": 0.639,
+  "p10": 0.636,
+  "n_dark70_regions": 0.628,
+  "p25": 0.62
+ },
+ "n": {
+  "med": 4741,
+  "gulf_test": 2763,
+  "gulf_train": 3623
+ }
+}

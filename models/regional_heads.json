@@ -1,0 +1,10 @@
+{
+  "description": "Region-specific heads on the shared frozen EfficientNet-B4 backbone. A crop is scored by the head whose bbox [lon_min, lon_max, lat_min, lat_max] contains the vessel; elsewhere the original CSIRO head is used on the raw crop. Each bbox is the extent of that head's labelled training data.",
+  "heads": [
+    {"name": "eastern_med_v1", "weights": "models/browse_head_v1.weights.h5", "info": "models/browse_head_v1.json",
+     "bbox": [27.0, 36.5, 29.0, 37.0]},
+    {"name": "arabian_gulf_v1", "weights": "models/gulf_head_v1.weights.h5", "info": "models/gulf_head_v1.json",
+     "bbox": [47.5, 60.0, 22.5, 30.5]}
+  ],
+  "fallback": {"name": "csiro_raw", "threshold": 0.75}
+}
