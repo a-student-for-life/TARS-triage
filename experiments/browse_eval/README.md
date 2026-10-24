@@ -1,6 +1,6 @@
 # Real browse-image evaluation (Eastern Mediterranean, 2019)
 
-Tests the deployed TARS classifier (`models/optisar_b4_retrained_weights.weights.h5`,
+Tests the CSIRO-trained TARS classifier (`models/optisar_b4_retrained_weights.weights.h5`,
 threshold 0.75) on real Sentinel-1 browse JPEGs, against independent expert labels.
 
 ## Labels
@@ -21,7 +21,7 @@ that resemble oil. There is no in-situ ground truth (the dataset authors note th
   lat/lon bounding box (~280 m/pixel). Verified by overlaying an offline land mask
   on ascending and descending scenes (`orientation_check_bbox.jpg`).
 - **Units.**
-  - *scene*: the whole browse image, which is what the live system classifies today.
+  - *scene*: the whole browse image, which is what the first version of the system classified.
     681 scenes: 558 containing labelled oil, 123 look-alike-only scenes inside the
     annotated area.
   - *crop*: a 25 km window centred on a labelled patch (simulates vessel-centred
@@ -151,13 +151,14 @@ false alarms from ship echoes are still possible. A live run will measure this.
 
 `train_final_head.py` trains on all 4,741 crops (median CV epoch count) and saves
 `models/browse_head_v1.weights.h5` with threshold 0.742 (median of fold thresholds)
-in `models/browse_head_v1.json`. The pipeline uses it by default (`TARS_MODEL=browse_v1`);
+in `models/browse_head_v1.json`. The pipeline uses it for vessels inside its region (default
+`TARS_MODEL=regional`; `TARS_MODEL=browse_v1` uses it everywhere);
 `TARS_MODEL=csiro` restores the original head with STI.
 
 ## Remaining limitations
 
-- One region (Eastern Mediterranean) and one year (2019). Performance elsewhere is
-  unknown; a second labelled region is the most valuable next step.
+- One region (Eastern Mediterranean) and one year (2019) here. The Arabian/Persian Gulf
+  is evaluated in `../gulf_eval`; other regions remain untested.
 - Ordinary-sea crops are *presumed* oil-free (no slick labelled within 30 km).
 - Head-only training. Fine-tuning the backbone (needs a GPU) may do better.
 - Patch-size AUC for slicks under 1 km is higher than resolution alone would

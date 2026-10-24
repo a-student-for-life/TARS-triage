@@ -86,3 +86,6 @@ secrets.json
 .idea/
 .vscode/settings.json
 *.code-workspace
+
+# ── Figure output ─────────────────────────────────────────────────────────────
+experiments/figures/out/

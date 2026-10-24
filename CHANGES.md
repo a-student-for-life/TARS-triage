@@ -1,7 +1,7 @@
-# Changes in the `improvements` branch
+# Changes since the version first submitted for review
 
-This branch was made in a separate copy (`TARS/improved/OilSpillWatchdog`);
-the original folder is untouched. Every change is covered by `tests/`.
+This file lists how the system differs from the version described in the manuscript
+as first submitted. Every change is covered by `tests/`.
 
 ## Data integrity
 
@@ -24,7 +24,7 @@ the post-review cooldown.
 
 The original used HDBSCAN cluster size alone. Measured on 12,068 real ships
 from the May database, HDBSCAN with no distance scale grouped ships hundreds
-of km apart, and a size-only rule called ~15% of ships a "rendezvous".
+of km apart, and a size-only rule called 38% of ships a possible "rendezvous".
 
 Now:
 - **dense area (SAFE veto):** HDBSCAN cluster of ≥ 6 ships whose median
@@ -48,16 +48,23 @@ meant "in an unusual place".
 
 Now each ship keeps its last 20 reports, and the forest uses five trajectory
 features with no position: mean speed, speed std, max speed change between
-reports, mean heading change, straightness. `contamination = "auto"`, and a
-ship must also be > 3.5 robust z-scores from the fleet median in at least one
-feature (otherwise a uniform fleet still produces "outliers").
+reports, mean heading change, straightness. A ship must also be > 3.5 robust
+z-scores from the fleet median in at least one feature (otherwise a uniform fleet
+still produces "outliers").
+
+The contamination is fixed at 0.01, an alarm budget of about 1% of the vessels
+judged in each cycle. On one day of the US fleet the automatic setting flagged
+7–9% of vessels per cycle and made Layer 3 the main source of escalations; with
+0.01 the whole cascade escalates 2.2–2.6% (`experiments/revision`). This is a
+workload choice, not a value tuned for accuracy. Override with
+`TARS_ISO_CONTAMINATION`.
 
 ## Layer 4 (image + classifier)
 
 - Watchdog: jobs without an image back off exponentially instead of being
   retried first on every loop (which blocked every other job). Misaligned
   jobs no longer get stuck. Jobs past the window become `EXPIRED`.
-- STI speckle is random. Each image is now scored as the mean of 8 draws with
+- STI (only used with `TARS_MODEL=csiro`) is random. Each image is scored as the mean of 8 draws with
   a seed derived from the file name, so the same image always gets the same
   score; the spread is logged.
 - The backbone is still built with `weights="imagenet"`. This is required:
