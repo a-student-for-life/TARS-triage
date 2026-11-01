@@ -108,7 +108,10 @@ cd frontend && npm install && cd ..
 **Model weights.** The two regional heads (`models/browse_head_v1.weights.h5`,
 `models/gulf_head_v1.weights.h5`) are included. The EfficientNet-B4 backbone with the
 CSIRO-trained head (`optisar_b4_retrained_weights.weights.h5`, 83 MB) is too large for
-git; download it from the repository's Releases page and place it in `models/`.
+git; download it from the repository's Releases page (available on publication) and place
+it in `models/`. During review, these weights are available from the authors on request.
+They are not needed to reproduce the paper's tables and figures, which run from the saved
+scores and features in `experiments/`.
 
 **AIS key.** Copy `node_ingestor/.env.example` to `node_ingestor/.env` and set
 `AIS_API_KEY` (free from [aisstream.io](https://aisstream.io)).
