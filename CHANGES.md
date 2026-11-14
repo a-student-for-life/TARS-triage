@@ -83,8 +83,10 @@ workload choice, not a value tuned for accuracy. Override with
 ## Vessel-centred cropping and a browse-trained head
 
 - The watchdog now classifies a 25 km crop around the vessel (`browse_geo.py`)
-  instead of the whole ~250 km scene. Browse previews are north-up rasters over the
-  footprint bounding box (verified against coastlines).
+  instead of the whole ~250 km scene. Most browse previews are north-up rasters over the
+  footprint bounding box; some are delivered in radar geometry (no black corners) and are
+  mapped through the footprint corners instead. The preview itself decides which mapping is
+  used (verified against coastlines in the Mediterranean, the Gulf and California).
 - **Region-aware heads (default `TARS_MODEL=regional`).** Browse-trained heads beat
   the original CSIRO head only inside their own region:
   - Eastern Mediterranean, 5-fold CV by day: AUC 0.909 vs 0.638.

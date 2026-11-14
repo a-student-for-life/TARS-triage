@@ -35,7 +35,7 @@ Anomaly engine (anomaly_engine.py), every 10 s on all vessels seen in the last 6
 Image worker (watchdog.py, satellite.py, browse_geo.py)
    first Sentinel-1 browse image acquired from 1 h before to 48 h after the anomaly;
    exponential back-off; EXPIRED after 60 h
-   25 km crop centred on the vessel (north-up footprint bounding box)
+   25 km crop centred on the vessel (geometry read from the preview: map-projected or radar)
    ▼
 Classifier (ml_logic.py)
    frozen EfficientNet-B4 backbone + the head whose region contains the vessel

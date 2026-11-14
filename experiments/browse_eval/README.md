@@ -17,9 +17,13 @@ that resemble oil. There is no in-situ ground truth (the dataset authors note th
 ## Method
 
 - 1,063 Sentinel-1 GRD products; footprints and browse JPEGs from NASA ASF.
-- **Georeferencing.** Browse images are north-up rasters covering the footprint's
-  lat/lon bounding box (~280 m/pixel). Verified by overlaying an offline land mask
-  on ascending and descending scenes (`orientation_check_bbox.jpg`).
+- **Georeferencing.** Most browse images are north-up rasters covering the footprint's
+  lat/lon bounding box (~280 m/pixel), verified by overlaying an offline land mask
+  (`orientation_check_bbox.jpg`). A minority (23 of 1,063 Mediterranean and 22 of 156
+  Gulf scenes) are delivered in radar geometry instead and were cut with the bounding-box
+  rule in this evaluation; re-cutting them with the corner mapping now in `browse_geo.py`
+  raises the Gulf results (for example the Gulf head on 2021 from 0.891 to 0.947 AUC in a
+  re-run with the BRINE splits), so the Gulf numbers reported here are conservative.
 - **Units.**
   - *scene*: the whole browse image, which is what the first version of the system classified.
     681 scenes: 558 containing labelled oil, 123 look-alike-only scenes inside the
