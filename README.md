@@ -198,3 +198,8 @@ If you use this code or the results, please cite the paper:
 The labelled datasets belong to their authors: please also cite Yang et al. (2025) for
 the Eastern Mediterranean labels, Culot et al. (2026) for GulfOilSAR, and the CSIRO
 dataset if you use them.
+
+## Licence
+
+The code is released under the MIT licence (see `LICENSE`). The datasets used in the
+paper keep their own licences.
