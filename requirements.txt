@@ -1,6 +1,6 @@
 # TARS — Python backend dependencies
 # Install with: pip install -r requirements.txt
-# Python >= 3.10 required (code uses | union types in type hints)
+# Python >= 3.11 required (pandas 3 and scikit-learn 1.8)
 
 # ── Web framework ─────────────────────────────────────────────────────────────
 fastapi==0.115.0
@@ -21,7 +21,7 @@ global-land-mask==1.0.0   # offline land mask for the offshore rules
 
 # ── Image processing ──────────────────────────────────────────────────────────
 # Use opencv-python-headless instead on servers without a display
-opencv-python==4.12.0
+opencv-python==4.12.0.88
 
 # ── Satellite data (NASA ASF API) ─────────────────────────────────────────────
 asf-search==10.1.1

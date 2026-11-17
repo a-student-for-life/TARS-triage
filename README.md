@@ -8,8 +8,14 @@ that region. The verdict is a triage decision for an analyst to review, not a
 confirmed spill.
 
 This repository holds the code, trained regional heads, result files and the scripts
-behind every table and figure of the paper *TARS: A Framework for Marine Oil Spill
-Triage Using AIS Anomaly Detection and SAR Browse Imagery* (under review).
+behind every table and figure of the paper:
+
+> J. Miranda, N. Nair, G. Shringare, N. Hussain, K. Bhadange, A. K. Tripathy (2026).
+> *TARS: a framework for marine oil spill triage using AIS anomaly detection and SAR
+> browse imagery.* **Applied Geomatics** (Springer Nature).
+> https://doi.org/10.1007/s12518-026-00837-5
+
+The same code is archived with the article as Online Resource 1.
 
 ## How it works
 
@@ -97,7 +103,7 @@ notebooks/TARS.ipynb training notebook for the CSIRO model
 
 ## Requirements and installation
 
-Python 3.10 or newer, Node.js 18 or newer.
+Python 3.11 or newer, Node.js 18 or newer.
 
 ```bash
 pip install -r requirements.txt
@@ -108,10 +114,10 @@ cd frontend && npm install && cd ..
 **Model weights.** The two regional heads (`models/browse_head_v1.weights.h5`,
 `models/gulf_head_v1.weights.h5`) are included. The EfficientNet-B4 backbone with the
 CSIRO-trained head (`optisar_b4_retrained_weights.weights.h5`, 83 MB) is too large for
-git; download it from the repository's Releases page (available on publication) and place
-it in `models/`. During review, these weights are available from the authors on request.
-They are not needed to reproduce the paper's tables and figures, which run from the saved
-scores and features in `experiments/`.
+git. Download it from the repository's Releases page, or ask the authors, and place it in
+`models/`. It is only needed to score crops outside the two trained regions or to retrain
+heads from images; the paper's tables and figures run from the saved scores and features
+in `experiments/`.
 
 **AIS key.** Copy `node_ingestor/.env.example` to `node_ingestor/.env` and set
 `AIS_API_KEY` (free from [aisstream.io](https://aisstream.io)).
@@ -173,3 +179,22 @@ An earlier design adapted the browse image towards the CSIRO training data with
 Statistical Texture Injection (speckle-like noise, CLAHE and a brightness shift). On
 labelled browse crops it did not improve discrimination, so the current system scores
 the raw crop. It is still available for comparison with `TARS_MODEL=csiro`.
+
+## Citation
+
+If you use this code or the results, please cite the paper:
+
+```bibtex
+@article{miranda2026tars,
+  title   = {{TARS}: a framework for marine oil spill triage using {AIS} anomaly detection and {SAR} browse imagery},
+  author  = {Miranda, Janice and Nair, Navya and Shringare, Gargi and Hussain, Nazeefa and Bhadange, Kirti and Tripathy, Amiya Kumar},
+  journal = {Applied Geomatics},
+  year    = {2026},
+  publisher = {Springer Nature},
+  doi     = {10.1007/s12518-026-00837-5}
+}
+```
+
+The labelled datasets belong to their authors: please also cite Yang et al. (2025) for
+the Eastern Mediterranean labels, Culot et al. (2026) for GulfOilSAR, and the CSIRO
+dataset if you use them.
