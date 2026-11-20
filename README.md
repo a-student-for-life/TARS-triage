@@ -12,7 +12,7 @@ behind every table and figure of the paper:
 
 > J. Miranda, N. Nair, G. Shringare, N. Hussain, K. Bhadange, A. K. Tripathy (2026).
 > *TARS: a framework for marine oil spill triage using AIS anomaly detection and SAR
-> browse imagery.* **Applied Geomatics** (Springer Nature).
+> browse imagery.* **Applied Geomatics** 18(4):182 (Springer Nature).
 > https://doi.org/10.1007/s12518-026-00837-5
 
 The same code is archived with the article as Online Resource 1.
@@ -190,6 +190,9 @@ If you use this code or the results, please cite the paper:
   author  = {Miranda, Janice and Nair, Navya and Shringare, Gargi and Hussain, Nazeefa and Bhadange, Kirti and Tripathy, Amiya Kumar},
   journal = {Applied Geomatics},
   year    = {2026},
+  volume  = {18},
+  number  = {4},
+  pages   = {182},
   publisher = {Springer Nature},
   doi     = {10.1007/s12518-026-00837-5}
 }
